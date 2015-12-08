@@ -1,0 +1,95 @@
+{"Groups":[
+{
+    "UniqueId": "Group-1",
+    "Title": "ГарнитурыдляNokiaLumia",
+    "Subtitle": "ГарнитурыдляNokiaLumia",
+"ImagePath": "Assets/DarkGray.png",
+"Description" : "НаушникиигарнитурыNokia. Великолепный звук. Комфорт без остановки.",
+"Items":
+    [
+      {
+        "UniqueId": "Group-1-Item-1",
+        "Title": "НАУШНИКИ COLOUD KNOCK",
+"Subtitle": "Великолепный звук. Комфорт без остановки.",
+"ImagePath": "Assets/2-Misc-Product-Page-Gear-593x500.png",
+     "Price": "999 руб.",
+        "Description" : "Великолепныйзвук. Комфорт без остановки.",
+        "Content" : "Великолепный звук. Комфорт без остановки."
+},
+      {
+        "UniqueId": "Group-1-Item-2",
+"Title": "НАУШНИКИ COLOUD POP",
+        "Subtitle": "НАУШНИКИ COLOUD POP",
+        "ImagePath": "Assets/3-Misc-Product-Page-Gear-594x500.png",
+     "Price": "999 руб.",
+        "Description" : "Великолепныйзвук. Куда бы вы ни направлялись.",
+        "Content" : "Великолепный звук. Куда бы вы ни направлялись."
+},
+      {
+        "UniqueId": "Group-1-Item-3",
+        "Title": "НАУШНИКИ COLOUD BOOM ",
+        "Subtitle": "Item Subtitle: 3",
+        "ImagePath": "Assets/1-Misc-Product-Page-Gear-636x500.png",
+     "Price": "999 руб.",
+        "Description" : "Великолепныйзвук. Великолепный стиль.",
+        "Content" : "Великолепный звук. Великолепный стиль."
+},
+      {
+        "UniqueId": "Group-1-Item-4",
+        "Title": "БЕСПРОВОДНАЯСТЕРЕОГАРНИТУРА NOKIA PURITY PRO ОТ MONSTER",
+        "Subtitle": "БЕСПРОВОДНАЯСТЕРЕОГАРНИТУРА NOKIA PURITY PRO ОТ MONSTER",
+"ImagePath": "Assets/BH-940-Front.png",
+"Price": "999 руб.",
+        "Description" : "Меньше шума, только музыка",
+        "Content" : "Меньше шума, только музыка"
+},
+      {
+        "UniqueId": "Group-1-Item-5",
+        "Title": "СТЕРЕОГАРНИТУРА NOKIA PURITY",
+        "Subtitle": "СТЕРЕОГАРНИТУРА NOKIA PURITY",
+        "ImagePath": "Assets/WH-920-cyan-png.png",
+"Price": "999 руб.",
+        "Description" : "Невероятный звук в наушниках-вкладышах",
+        "Content" : "Невероятный звук в наушниках-вкладышах"
+      }
+    ]
+  },
+  {
+    "UniqueId": "Group-2",
+    "Title": "Зарядка и передача данных",
+    "Subtitle": "Зарядка и передача данных",
+"ImagePath": "Assets/LightGray.png",
+    "Description" : "Зарядныеустройства. Беспроводная зарядка в пути",
+    "Items":
+    [
+      {
+        "UniqueId": "Group-2-Item-1",
+        "Title": "ПОРТАТИВНАЯ БЕСПРОВОДНАЯ ЗАРЯДНАЯ ПАНЕЛЬ NOKIA DC-50",
+        "Subtitle": "ПОРТАТИВНАЯ БЕСПРОВОДНАЯ ЗАРЯДНАЯ ПАНЕЛЬ NOKIA DC-50",
+"ImagePath": "Assets/Nokia-Portable-Wireless-Charging-Plate-DC-50.png",
+"Price": "999 руб.",
+        "Description" : "Беспроводная зарядка в пути",
+        "Content" : "Беспроводная зарядка в пути"
+      },
+      {
+        "UniqueId": "Group-2-Item-2",
+        "Title": "УНИВЕРСАЛЬНОЕ ПОРТАТИВНОЕ ЗАРЯДНОЕ УСТРОЙСТВО NOKIA DC-19",
+        "Subtitle": "УНИВЕРСАЛЬНОЕ ПОРТАТИВНОЕ ЗАРЯДНОЕ УСТРОЙСТВО NOKIA DC-19",
+"ImagePath": "Assets/Nokia-universal-portable-USB-charger-DC-19.png",
+"Price": "999 руб.",
+        "Description" : "Полный карман энергии",
+"Content" : "Полныйкарманэнергии"
+      },
+      {
+        "UniqueId": "Group-2-Item-3",
+"Title": "БЕСПРОВОДНАЯ ЗАРЯДНАЯ ПАНЕЛЬ",
+        "Subtitle": "БЕСПРОВОДНАЯ ЗАРЯДНАЯ ПАНЕЛЬ",
+"ImagePath": "Assets/DT-900-Front.png",
+"Price": "999 руб.",
+        "Description" : "Непринужденная зарядка",
+        "Content" : "Непринужденная зарядка"
+      }
+    ]
+  }
+]
+}

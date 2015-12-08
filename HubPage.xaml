@@ -1,0 +1,115 @@
+<Page
+DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+x:Name="pageRoot"
+x:Class="eShop.HubPage"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:local="using:eShop"
+xmlns:data="using:eShop.Data"
+xmlns:common="using:eShop.Common"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+mc:Ignorable="d">
+
+<Page.Resources>
+<DataTemplatex:Key="CategoryItemTemplate">
+<GridHeight="280"Width="310"Margin="5,10,5,10">
+<Grid.RowDefinitions>
+<RowDefinitionHeight="Auto"/>
+<RowDefinitionHeight="*"/>
+<RowDefinitionHeight="Auto"/>
+</Grid.RowDefinitions>
+<BorderBackground="{ThemeResourceListViewItemPlaceholderBackgroundThemeBrush}"Height="150">
+<ImageSource="{Binding ImagePath}"Stretch="None"AutomationProperties.Name="{Binding Title}"/>
+</Border>
+<StackPanelGrid.Row="1"Margin="0,10,0,0">
+<TextBlockText="{Binding Title}"Style="{StaticResourceTitleTextBlockStyle}"TextWrapping="NoWrap"/>
+<TextBlockText="{Binding Description}"Style="{StaticResourceBodyTextBlockStyle}"MaxHeight="60" />
+</StackPanel>
+<ButtonGrid.Row="2"Content="купить"Margin="0,10,0,0"HorizontalAlignment="Right" />
+</Grid>
+</DataTemplate>
+</Page.Resources>
+
+<GridBackground="{ThemeResourceApplicationPageBackgroundThemeBrush}">
+<Grid.ChildrenTransitions>
+<TransitionCollection>
+<EntranceThemeTransition/>
+</TransitionCollection>
+</Grid.ChildrenTransitions>
+<HubSectionHeaderClick="Hub_SectionHeaderClick">
+<Hub.Header>
+<Grid>
+<Grid.ColumnDefinitions>
+<ColumnDefinitionWidth="80"/>
+<ColumnDefinitionWidth="*"/>
+</Grid.ColumnDefinitions>
+<Buttonx:Name="backButton"Style="{StaticResourceNavigationBackButtonNormalStyle}"
+Margin="-1,-1,39,0"
+VerticalAlignment="Top"
+Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
+AutomationProperties.Name="Back"
+AutomationProperties.AutomationId="BackButton"
+AutomationProperties.ItemType="Navigation Button"/>
+<TextBlockx:Name="pageTitle"Text="{StaticResourceAppName}"Style="{StaticResourceHeaderTextBlockStyle}"Grid.Column="1"
+VerticalAlignment="Top"IsHitTestVisible="false"TextWrapping="NoWrap" />
+</Grid>
+</Hub.Header>
+<HubSectionWidth="780"Margin="0,0,80,0">
+<HubSection.Background>
+<ImageBrushImageSource="Assets/Background.jpg"Stretch="UniformToFill" />
+</HubSection.Background>
+</HubSection>
+<HubSectionWidth="500"Header="Акцииипредложения">
+<DataTemplate>
+<Grid>
+<Grid.RowDefinitions>
+<RowDefinitionHeight="Auto" />
+<RowDefinitionHeight="Auto" />
+<RowDefinitionHeight="*" />
+<RowDefinitionHeight="Auto" />
+</Grid.RowDefinitions>
+<ImageSource="Assets/DT-900-Front.png"Stretch="None"Width="420"Height="280"/>
+<TextBlockStyle="{StaticResourceSubheaderTextBlockStyle}"Grid.Row="1"Margin="0,10,0,0"TextWrapping="Wrap"
+Text="Забудьтеопроводах" />
+<TextBlockStyle="{StaticResourceBodyTextBlockStyle}"Grid.Row="2"
+Text="Просто положите телефон на панель беспроводной зарядки - удобнее не бывает!" />
+<ButtonGrid.Row="3"Content="купить"Margin="0,10,0,0"HorizontalAlignment="Right" />
+</Grid>
+</DataTemplate>
+</HubSection>
+<HubSectionIsHeaderInteractive="True"DataContext="{Binding Group1Items}"Header="{Binding Title}"Padding="40,40,40,32">
+<DataTemplate>
+<GridView
+x:Name="itemGridView"
+ItemsSource="{Binding Items}"
+Margin="-9,-14,0,0"
+AutomationProperties.AutomationId="ItemGridView"
+AutomationProperties.Name="Items In Group"
+ItemTemplate="{StaticResourceCategoryItemTemplate}"
+SelectionMode="None"
+IsSwipeEnabled="false"
+IsItemClickEnabled="True"
+ItemClick="ItemView_ItemClick">
+</GridView>
+</DataTemplate>
+</HubSection>
+<HubSectionIsHeaderInteractive="True"DataContext="{Binding Group2Items}"Header="{Binding Title}"Padding="40,40,40,32">
+<DataTemplate>
+<GridView
+x:Name="itemGridView"
+ItemsSource="{Binding Items}"
+Margin="-9,-14,0,0"
+AutomationProperties.AutomationId="ItemGridView"
+AutomationProperties.Name="Items In Group"
+ItemTemplate="{StaticResourceCategoryItemTemplate}"
+SelectionMode="None"
+IsSwipeEnabled="false"
+IsItemClickEnabled="True"
+ItemClick="ItemView_ItemClick">
+</GridView>
+</DataTemplate>
+</HubSection>
+</Hub>
+</Grid>
+</Page>
